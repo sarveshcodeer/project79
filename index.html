@@ -1,0 +1,37 @@
+<head> 
+    <title>monkey moves </title>
+    <style>
+
+    </style>
+   </head>
+
+   <body>
+    <center>
+     <h1>My Family Book </h1>
+     <img id ="hm"  src= "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781631586613/my-family-and-me-9781631586613_lg.jpg" width="300" height="400" >
+     <br>
+     <h2 id = "dn"></h2>
+     <br><button onclick= "next()"> view next photo </button>
+    </center>  
+   </body>
+
+
+   <script>
+var moves=[ "https://i.pinimg.com/originals/dc/d0/48/dcd048e66cf16d643b64381f0f6df50c.jpg" , "https://as2.ftcdn.net/v2/jpg/01/63/72/71/1000_F_163727197_NrlGLQNTod4DERiYbTnL88fTr2SNQm8d.jpg" , "https://i.pinimg.com/originals/72/57/85/725785d6a926b75dc50cfc1ee1f79d8c.jpg" , "https://i.pinimg.com/originals/27/70/2a/27702a8312e4dc30bde1738ca2f52d5b.png"] ;
+var names1=[ "Father" , "Mother", "Sister"  ,"Brother"];
+var d = 0
+function next() {
+ if(d==4){
+   d=0;
+ }
+  
+  document.getElementById("hm").src= moves[d];
+  document.getElementById("dn").innerHTML = names1[d];
+  d=d+1;
+}
+
+
+
+
+
+   </script>
